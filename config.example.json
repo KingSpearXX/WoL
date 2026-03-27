@@ -1,0 +1,15 @@
+{
+  "port": 3000,
+  "jwtSecret": "change-me-to-a-random-string",
+  "rpName": "WoL PWA",
+  "rpId": "localhost",
+  "rpOrigin": "http://localhost:3000",
+  "broadcastAddress": "255.255.255.255",
+  "targets": [
+    {
+      "id": "my-pc",
+      "name": "My PC",
+      "mac": "AA:BB:CC:DD:EE:FF"
+    }
+  ]
+}
