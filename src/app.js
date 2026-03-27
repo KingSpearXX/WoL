@@ -12,17 +12,8 @@ function createApp() {
   const app = express();
 
   app.use(helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", "https://unpkg.com"],
-        styleSrc: ["'self'", "'unsafe-inline'"],
-        connectSrc: ["'self'"],
-        imgSrc: ["'self'", "data:"],
-        manifestSrc: ["'self'"],
-        workerSrc: ["'self'"],
-      },
-    },
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
   }));
 
   app.use(express.json());
